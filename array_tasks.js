@@ -15,11 +15,16 @@ var arrayTasks = {
 
 	insertAt: function (arr, itemToAdd, index) {
 	let	newArray = [];
+	// for each index position in arr.
 		for(let i in arr){
+			// if the index number is less than the number passed in.
 			if(i < index){
+				// push those elements into the newArray.
 				newArray.push(arr[i]);
 			}else{
+				// then push itemToAdd to the end of the newArray.
 				newArray.push(itemToAdd);
+				//then push the remaining elements to the end of newArray. 
 				newArray.push(arr[i]);
 			}
 		}
